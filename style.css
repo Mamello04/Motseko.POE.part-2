@@ -185,36 +185,3 @@ footer {
   color: white;
   margin-top: 40px;
 }
-/* reveal animation */
-.reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(15px);
-  transition: opacity 600ms ease, transform 600ms ease;
-}
-.reveal-on-scroll.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* form status messages */
-.form-status {
-  padding: 12px;
-  border-radius: 6px;
-  margin-bottom: 12px;
-  background: #fff8e6;
-  border-left: 4px solid #f0c040;
-}
-.form-status.error {
-  background: #ffe6e6;
-  border-left-color: #e04b4b;
-}
-.form-status.success {
-  background: #e6ffef;
-  border-left-color: #27a36b;
-}
-
-/* focus states for accessibility */
-a:focus, button:focus, input:focus, textarea:focus {
-  outline: 3px solid #b39ddb;
-  outline-offset: 2px;
-}
