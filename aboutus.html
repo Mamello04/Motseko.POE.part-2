@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - CYM Botshabelo</title>
-  <link rel="stylesheet" href="style.css">
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="About Us - CYM Botshabelo | Youth Ministry">
+    <meta name="description" content="Learn more about CYM Botshabelo, our mission, values, goals, leadership and commitment to empowering youth through faith, service and community development.">
+    <meta name="keywords" content="CYM Botshabelo, URCSA Botshabelo, Christian youth ministry, church youth, Botshabelo youth, youth development, youth empowerment, URCSA youth">
+
+    <title>About Us | CYM Botshabelo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">CYM Botshabelo</h1>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav>
+            <h1 class="logo">CYM Botshabelo</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html" class="active">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Main content -->
-  <main>
-    <h2>About Us</h2>
-    <p>The Christian Youth Ministry (CYM) of the Uniting Reformed Church in Southern Africa began as a small fellowship group and has grown into a youth-driven outreach programme.</p>
-    <p><strong>Mission:</strong> To empower young people spiritually, emotionally, and socially by helping them build a strong foundation in God and by serving the needs of their communities.</p>
-    <p><strong>Vision:</strong> To see a generation of youth rooted in faith, living with purpose, and transforming society through service and love.</p>
-    <img src="project-images/cym-logo.jpg" alt="CYM Logo" style="width:200px;">
-  </main>
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+        <h2 class="fade-in">About CYM Botshabelo</h2>
+        <p class="fade-in delay-1">Empowering young people through faith, service, and leadership.</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 CYM Botshabelo</p>
-  </footer>
+    <!-- About Content -->
+    <main class="content fade-in">
+        <section class="about-section">
+            <h2>Who We Are</h2>
+            <p>
+                CYM Botshabelo is a Christian youth organization under URCSA Botshabelo. 
+                We aim to spiritually uplift young people while helping them to grow socially, mentally, and emotionally. 
+                Our programs focus on leadership, community service, worship, and personal development.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to build responsible, empowered, and spiritually grounded youth who can positively influence their community and the world.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Our Values</h2>
+            <ul class="values-list">
+                <li>Faith & Spiritual Growth</li>
+                <li>Leadership Development</li>
+                <li>Community Service</li>
+                <li>Respect & Integrity</li>
+                <li>Youth Empowerment</li>
+            </ul>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="leaders-section fade-in">
+            <h2>Meet Our Leaders</h2>
+
+            <div class="leaders-grid">
+
+                <div class="leader-card">
+                    <img src="images/chairperson.jpg" alt="CYM Chairperson - Youth Leader">
+                    <h3>Chairperson</h3>
+                    <p>Provides leadership and oversees the entire youth ministry program.</p>
+                </div>
+
+                <div class="leader-card">
+                    <img src="images/secretary.jpg" alt="CYM Secretary - Communications Leader">
+                    <h3>Secretary</h3>
+                    <p>Handles communication, documentation, and administration.</p>
+                </div>
+
+                <div class="leader-card">
+                    <img src="images/treasurer.jpg" alt="CYM Treasurer - Financial Leader">
+                    <h3>Treasurer</h3>
+                    <p>Manages finances and ensures responsible stewardship.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Lightbox Image Gallery -->
+        <section class="gallery-section fade-in">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/event1.jpg" alt="Youth event 1" class="gallery-img">
+                <img src="images/event2.jpg" alt="Youth event 2" class="gallery-img">
+                <img src="images/event3.jpg" alt="Youth workshop" class="gallery-img">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CYM Botshabelo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

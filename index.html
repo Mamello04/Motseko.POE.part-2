@@ -1,36 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CYM Botshabelo - Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- Navigation -->
-  <nav class="navbar">
+  <!-- PAGE TITLE & SEO -->
+  <title>CYM Botshabelo — Home | Youth Ministry & Community Outreach</title>
+  <meta name="description" content="CYM Botshabelo - Empowering youth through faith, leadership and community outreach in Botshabelo. Join our programs, access resources and get involved.">
+  <meta name="keywords" content="CYM Botshabelo, youth ministry, URCSA, youth outreach, Botshabelo programs, church youth">
+  <link rel="canonical" href="https://your-domain.example/index.html">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:site_name" content="CYM Botshabelo">
+  <meta property="og:title" content="CYM Botshabelo — Home">
+  <meta property="og:description" content="CYM Botshabelo - Empowering youth through faith, leadership and community outreach.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-domain.example/index.html">
+  <meta property="og:image" content="https://your-domain.example/project-images/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CYM Botshabelo">
+  <meta name="twitter:description" content="Youth ministry & community outreach in Botshabelo.">
+  <meta name="twitter:image" content="https://your-domain.example/project-images/og-image.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CYM Botshabelo",
+    "url": "https://your-domain.example",
+    "logo": "https://your-domain.example/project-images/cym-logo.jpg",
+    "sameAs": [
+      "https://www.facebook.com/URCSA",
+      "https://www.tiktok.com/@cym.botshabelo"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "‪+27640482790‬",
+      "contactType": "customer service",
+      "areaServed": "ZA"
+    }]
+  }
+  </script>
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Core JS: small helpers (menu + basic behavior). Defer so DOM exists. -->
+  <script defer src="js/script.js"></script>
+
+  <!-- Part 3 interactions: gallery lightbox, search, form helper, map init -->
+  <script defer src="js/part3.js"></script>
+</head>
+
+<body>
+  <!-- NAVIGATION: consistent across all pages -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <h1 class="logo">CYM Botshabelo</h1>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
+
+    <!-- Mobile menu toggle (accessible) -->
+    <input id="menu-toggle" type="checkbox" />
+    <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu" aria-expanded="false">&#9776;</label>
+
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a role="menuitem" href="index.html" aria-current="page">Home</a></li>
+      <li role="none"><a role="menuitem" href="aboutus.html">About Us</a></li>
+      <li role="none"><a role="menuitem" href="resources.html">Resources</a></li>
+      <li role="none"><a role="menuitem" href="get-involved.html">Get Involved</a></li>
+      <li role="none"><a role="menuitem" href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
 
-  <!-- Main content -->
   <main>
-    <h2>Welcome</h2>
-    <p>We are a youth ministry dedicated to serving God and uplifting our community through spiritual growth, outreach, and service.</p>
-    <img src="project-images/ministry-pic.png" alt="Our Ministry" style="width:100%;max-width:600px;">
+    <!-- HERO -->
+    <section class="hero reveal-on-scroll" aria-labelledby="hero-title">
+      <h2 id="hero-title">Welcome to CYM Botshabelo</h2>
+      <p>
+        CYM (Christian Youth Ministry) Botshabelo equips young people with biblical teaching,
+        leadership development and community outreach. Join our events, explore our resources,
+        and get involved in serving Botshabelo.
+      </p>
+    </section>
+
+    <!-- GALLERY (LIGHTBOX) -->
+    <section class="gallery reveal-on-scroll" aria-labelledby="gallery-title">
+      <h3 id="gallery-title">Our Ministry in Action</h3>
+      <p>Click/tap an image to open the gallery. Use arrow keys or swipe to navigate.</p>
+
+      <div class="gallery-grid" aria-hidden="false">
+        <!-- Use descriptive filenames and alt text for SEO -->
+        <img
+          data-lightbox="gallery"
+          src="project-images/outreach-2024-thumb.jpg"
+          data-src="project-images/outreach-2024.jpg"
+          data-filename="outreach-2024.jpg"
+          data-caption="Youth outreach distributing food parcels — Botshabelo 2024"
+          alt="Youth outreach distributing food parcels in Botshabelo, 2024"
+          loading="lazy">
+
+        <img
+          data-lightbox="gallery"
+          src="project-images/camp-2023-thumb.jpg"
+          data-src="project-images/camp-2023.jpg"
+          data-filename="camp-2023.jpg"
+          data-caption="Annual youth camp 2023"
+          alt="CYM annual youth camp 2023 group photo"
+          loading="lazy">
+
+        <img
+          data-lightbox="gallery"
+          src="project-images/worship-2025-thumb.jpg"
+          data-src="project-images/worship-2025.jpg"
+          data-filename="worship-2025.jpg"
+          data-caption="Worship night 2025"
+          alt="Worship night at CYM Botshabelo - youth worshipping together"
+          loading="lazy">
+      </div>
+    </section>
+
+    <!-- EMBEDDED VIDEO -->
+    <section class="video-section reveal-on-scroll" aria-labelledby="video-title">
+      <h3 id="video-title">Watch a Recent Message</h3>
+      <div style="max-width:900px;margin:0 auto;">
+        <!-- Replace VIDEO_ID with the YouTube ID for your video -->
+        <iframe width="100%" height="480" src="https://www.youtube.com/embed/VIDEO_ID"
+          title="CYM Botshabelo - Recent Message" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- LIVE SEARCH (Resources excerpt) -->
+    <section class="search-area reveal-on-scroll" aria-labelledby="search-title">
+      <h3 id="search-title">Quick Search — Resources & Programs</h3>
+
+      <!-- This input ties to part3.js which expects id="resource-search" -->
+      <div class="resource-search-wrapper">
+        <input id="resource-search" type="search" placeholder="Search devotionals, sermons, guides..." aria-label="Search resources">
+        <div id="resource-count" aria-live="polite"></div>
+      </div>
+
+      <!-- Resource list — ensure resources.html uses same structure so search is consistent -->
+      <ul id="resource-list" aria-live="polite">
+        <li class="resource-item" data-title="Daily Devotions" data-tags="devotional bible" data-desc="Daily devotions for personal growth">
+          <h4 class="resource-title">Daily Devotions</h4>
+          <p class="resource-desc">Short devotions to start each day with scripture and reflection.</p>
+          <a class="resource-link" href="project-files/daily-devotions.pdf">Download (PDF)</a>
+        </li>
+
+        <li class="resource-item" data-title="Youth Bible Study Guide" data-tags="bible study guide" data-desc="12-week youth bible study">
+          <h4 class="resource-title">Youth Bible Study Guide</h4>
+          <p class="resource-desc">A 12-week study plan for small groups and youth meetings.</p>
+          <a class="resource-link" href="project-files/study-guide.pdf">Download (PDF)</a>
+        </li>
+
+        <li class="resource-item" data-title="Leadership Training Notes" data-tags="leadership training" data-desc="Notes for youth leadership training">
+          <h4 class="resource-title">Leadership Training Notes</h4>
+          <p class="resource-desc">Materials used during leadership workshops and training sessions.</p>
+          <a class="resource-link" href="project-files/training-notes.pdf">Download (PDF)</a>
+        </li>
+      </ul>
+    </section>
   </main>
 
+  <!-- FOOTER (consistent) -->
   <footer>
-    <p>&copy; 2025 CYM Botshabelo</p>
+    <p>&copy; 2025 CYM Botshabelo. All Rights Reserved. <a href="contactus.html">Contact Us</a></p>
   </footer>
+
 </body>
 </html>

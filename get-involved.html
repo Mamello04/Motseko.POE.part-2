@@ -1,52 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Involved - CYM Botshabelo</title>
-  <link rel="stylesheet" href="style.css">
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Get Involved - CYM Botshabelo | Youth Ministry">
+    <meta name="description" content="Join CYM Botshabelo and become part of our youth programs, community outreach, leadership development, fundraising activities, and ministry work.">
+    <meta name="keywords" content="Join CYM, CYM Botshabelo membership, youth ministry involvement, church youth programs, volunteer Botshabelo, URCSA Botshabelo youth">
+
+    <title>Get Involved | CYM Botshabelo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">CYM Botshabelo</h1>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav>
+            <h1 class="logo">CYM Botshabelo</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Main content -->
-  <main>
-    <h2>Get Involved</h2>
-    <p>Want to support us? Choose from the following:</p>
+    <!-- Hero -->
+    <section class="hero involved-hero fade-in">
+        <h2>Get Involved</h2>
+        <p>Join us and make a difference in the lives of young people.</p>
+    </section>
 
-    <h3>Sponsor Form</h3>
-    <form>
-      <label>Organisation Name:</label><br>
-      <input type="text" required><br><br>
+    <main class="content">
 
-      <label>Contact Person:</label><br>
-      <input type="text" required><br><br>
+        <!-- Ways to Get Involved -->
+        <section class="involved-section fade-in">
+            <h2>Ways You Can Participate</h2>
 
-      <label>Phone:</label><br>
-      <input type="tel" required><br><br>
+            <div class="involved-grid">
 
-      <label>Email:</label><br>
-      <input type="email" required><br><br>
+                <div class="involved-card">
+                    <img src="images/volunteer.jpg" alt="Volunteer with CYM Botshabelo" class="card-img">
+                    <h3>Volunteer</h3>
+                    <p>Help us during events, outreach programs, youth camps, and church activities.</p>
+                </div>
 
-      <input type="submit" value="Send">
-    </form>
-  </main>
+                <div class="involved-card">
+                    <img src="images/leadership.jpg" alt="Youth leadership program" class="card-img">
+                    <h3>Join Leadership</h3>
+                    <p>Develop your leadership skills and become a youth leader within CYM.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 CYM Botshabelo</p>
-  </footer>
+                <div class="involved-card">
+                    <img src="images/outreach.jpg" alt="Community outreach in Botshabelo" class="card-img">
+                    <h3>Community Outreach</h3>
+                    <p>Participate in charity work, community clean-ups, and donation drives.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Lightbox Gallery -->
+        <section class="gallery-section fade-in">
+            <h2>Moments from Our Programs</h2>
+
+            <div class="gallery-grid">
+                <img src="images/program1.jpg" alt="Youth activity 1" class="gallery-img">
+                <img src="images/program2.jpg" alt="Youth activity 2" class="gallery-img">
+                <img src="images/program3.jpg" alt="Youth activity 3" class="gallery-img">
+            </div>
+        </section>
+
+        <!-- Signup Form -->
+        <section class="form-section fade-in delay-1">
+            <h2>Sign Up to Get Involved</h2>
+
+            <form id="involvedForm" class="contact-form">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <small class="error-msg" id="nameError"></small>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+                <small class="error-msg" id="emailError"></small>
+
+                <label for="interest">Area of Interest:</label>
+                <select id="interest" name="interest">
+                    <option value="">-- Select an option --</option>
+                    <option value="Volunteer">Volunteer</option>
+                    <option value="Leadership">Leadership</option>
+                    <option value="Community Outreach">Community Outreach</option>
+                </select>
+                <small class="error-msg" id="interestError"></small>
+
+                <button type="submit" class="btn">Submit</button>
+
+                <p id="formResponse" class="form-response"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CYM Botshabelo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

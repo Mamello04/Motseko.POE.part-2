@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources - CYM Botshabelo</title>
-  <link rel="stylesheet" href="style.css">
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Resources - CYM Botshabelo | Youth Ministry Materials">
+    <meta name="description" content="Explore CYM Botshabelo study guides, devotionals, sermons, teachings, videos, and youth ministry resources. Download materials and grow spiritually.">
+    <meta name="keywords" content="CYM resources, youth ministry resources, Christian devotionals, URCSA sermons, study guides, Christian education">
+
+    <title>Resources | CYM Botshabelo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">CYM Botshabelo</h1>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav>
+            <h1 class="logo">CYM Botshabelo</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Main content -->
-  <main>
-    <h2>Resources</h2>
-    <ul>
-      <li>Devotionals</li>
-      <li>Sermons</li>
-      <li>Downloadable Study Guides</li>
-    </ul>
+    <!-- Hero -->
+    <section class="hero resources-hero fade-in">
+        <h2>Our Resources</h2>
+        <p>Grow your faith with our devotionals, sermons, study guides, and youth programs.</p>
+    </section>
 
-    <h3>Our Programs</h3>
-    <ul>
-      <li>Community Services</li>
-      <li>Skills Development</li>
-      <li>Youth Outreach</li>
-    </ul>
-  </main>
+    <main class="content">
 
-  <footer>
-    <p>&copy; 2025 CYM Botshabelo</p>
-  </footer>
+        <!-- Search -->
+        <section class="search-section fade-in">
+            <h3>Search Resources</h3>
+            <input type="text" id="searchBar" placeholder="Search sermons, guides, devotionals...">
+        </section>
+
+        <!-- Resource List -->
+        <section class="resource-list fade-in" id="resourceList">
+
+            <div class="resource-item">
+                <h3 class="accordion">Daily Devotionals</h3>
+                <div class="panel">
+                    <p>Short, meaningful devotions to start your day with God.</p>
+                    <ul>
+                        <li><a href="downloads/devotional1.pdf" download>Faith in Hard Times</a></li>
+                        <li><a href="downloads/devotional2.pdf" download>Hope and Renewal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resource-item">
+                <h3 class="accordion">Sermons</h3>
+                <div class="panel">
+                    <p>Sermons preached at CYM and URCSA services.</p>
+
+                    <div class="gallery-grid">
+                        <img src="images/sermon1.jpg" alt="Sermon 1" class="gallery-img">
+                        <img src="images/sermon2.jpg" alt="Sermon 2" class="gallery-img">
+                        <img src="images/sermon3.jpg" alt="Sermon 3" class="gallery-img">
+                    </div>
+
+                    <ul>
+                        <li><a href="downloads/sermon1.pdf" download>The Power of Prayer</a></li>
+                        <li><a href="downloads/sermon2.pdf" download>Living with Purpose</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resource-item">
+                <h3 class="accordion">Youth Study Guides</h3>
+                <div class="panel">
+                    <p>Study guides for youth programs, bible study, and Sunday school.</p>
+                    <ul>
+                        <li><a href="downloads/studyguide1.pdf" download>Identity in Christ</a></li>
+                        <li><a href="downloads/studyguide2.pdf" download>Christian Leadership</a></li>
+                        <li><a href="downloads/studyguide3.pdf" download>Faith Foundations</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resource-item">
+                <h3 class="accordion">Video Teachings</h3>
+                <div class="panel">
+                    <p>Watch teaching videos and ministry moments.</p>
+
+                    <!-- YouTube Integration -->
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ysz5S6PUM-U" 
+                            title="CYM Video Teaching" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CYM Botshabelo | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+

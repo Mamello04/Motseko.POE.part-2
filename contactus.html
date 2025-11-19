@@ -1,38 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - CYM Botshabelo</title>
-  <link rel="stylesheet" href="style.css">
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Contact Us - CYM Botshabelo | Youth Ministry">
+    <meta name="description" content="Get in touch with CYM Botshabelo. Contact us for inquiries, youth programs, events, partnerships, and church youth ministry activities.">
+    <meta name="keywords" content="Contact CYM Botshabelo, URCSA Botshabelo youth, youth ministry contact, Botshabelo church youth, CYM contact form, Christian youth help">
+
+    <title>Contact Us | CYM Botshabelo</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1 class="logo">CYM Botshabelo</h1>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-    </ul>
-  </nav>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav>
+            <h1 class="logo">CYM Botshabelo</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contactus.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Main content -->
-  <main>
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> ‪+27 64 048 2790‬</p>
-    <p><strong>Email:</strong> cymbotshabelo@gmail.com</p>
-    <p><strong>Facebook:</strong> @URCSA Botshabelo</p>
-    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@cym.botshabelo">cym.botshabelo</a></p>
-  </main>
+    <!-- Hero -->
+    <section class="hero contact-hero fade-in">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Reach out anytime!</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 CYM Botshabelo</p>
-  </footer>
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Contact Information -->
+        <section class="contact-section fade-in">
+            <h2>Get in Touch</h2>
+            <p><strong>Phone:</strong> ‪+27 64 048 2790‬</p>
+            <p><strong>Email:</strong> cymbotshabelo@gmail.com</p>
+            <p><strong>Facebook:</strong> @URCSA Botshabelo</p>
+            <p><strong>TikTok:</strong> @cym.botshabelo</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="form-section fade-in delay-1">
+            <h2>Send us a Message</h2>
+
+            <form id="contactForm" class="contact-form">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <small class="error-msg" id="nameError"></small>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <small class="error-msg" id="emailError"></small>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message"></textarea>
+
+                <small class="error-msg" id="messageError"></small>
+
+                <button type="submit" class="btn">Send Message</button>
+
+                <p id="formResponse" class="form-response"></p>
+            </form>
+        </section>
+
+        <!-- Google Maps -->
+        <section class="map-section fade-in delay-2">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.213702317979!2d26.742!3d-29.214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8fd95c7b1bf6a5%3A0xeba21e7b1cd58b1d!2sBotshabelo%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v0000000"
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="CYM Botshabelo Location">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CYM Botshabelo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
